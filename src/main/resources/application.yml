@@ -1,0 +1,35 @@
+management.endpoints.web.exposure.include: "*"
+spring.profiles.active: prd
+#spring.profiles.active: ddv
+
+server:
+   servlet:
+      context-path: /demo-info
+
+course: 
+   message: Hello world!
+
+spring:
+  datasource:
+    url: jdbc:h2:tcp://localhost/~/test 
+    #url: jdbc:h2:~/test
+    username: sa
+    password: 
+    driverClassName: org.h2.Driver
+  jpa:
+    spring.jpa.database-platform: org.hibernate.dialect.H2Dialect
+  h2:
+    console:
+      enabled: true
+#---
+#
+#spring: 
+#	profiles: dev
+#	server.port:9080
+#	
+#	
+#---
+#
+#spring:
+#	profiles: prd
+#	server.port:9090

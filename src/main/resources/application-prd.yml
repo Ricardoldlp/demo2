@@ -1,0 +1,4 @@
+server.port: 9080 
+
+course: 
+   message: Hello world!!
